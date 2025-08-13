@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mitly – Learn & Play</title>
+  <style>
+    @font-face {
+      font-family: 'CustomBold';
+      src: url('fonts/CustomBold.woff2') format('woff2'),
+           url('fonts/CustomBold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #111;
+      color: #eee;
+      text-align: center;
+    }
+
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Logo */
+    header h1 {
+      font-size: 2.5rem;
+      font-family: 'CustomBold', sans-serif;
+      color: #FF0000;
+      margin: 0;
+      letter-spacing: 0.1em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    /* Navigation in center */
+    nav {
+      flex: 1;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #FF4444;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Auth buttons on right */
+    .auth-buttons {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .auth-buttons button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login-btn {
+      background: transparent;
+      border: 1px solid #FF4444;
+      color: #FF4444;
+    }
+
+    .signup-btn {
+      background: #FF4444;
+      color: #fff;
+    }
+
+    .auth-buttons button:hover {
+      opacity: 0.85;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 4rem 2rem;
+    }
+
+    .hero button {
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+      margin: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .learn-btn {
+      background: #FF4444;
+      color: #fff;
+    }
+
+    .play-btn {
+      background: #03dac5;
+      color: #111;
+    }
+
+    /* Features */
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: #222;
+      padding: 1.5rem;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 240px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #FF4444;
+    }
+
+    footer {
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mitly</h1>
+    <nav>
+      <a href="learn.html">Learn</a>
+      <a href="play.html">Play</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="auth-buttons">
+  <button class="login-btn" onclick="location.href='login.html'">Login</button>
+  <button class="signup-btn" onclick="location.href='signup.html'">Sign Up</button>
+  
+</div>
+  </header>
+  
+  <div class="hero">
+    <button class="learn-btn" onclick="location.href='learn.html'">Start Learning</button>
+    <button class="play-btn" onclick="location.href='play.html'">Explore Funhub</button>
+  </div>
+
+  <!-- other sections… -->
+</body>
+</html>
